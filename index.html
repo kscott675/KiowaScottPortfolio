@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Dragon Cave</title>
+  <link rel='stylesheet' href='https://fonts.googleapis.com/css2?family=Press+Start+2P&amp;display=swap'><link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<title> Dragon Cave </title>
+<div class="wholeThing">
+  <h1 id="name">Dragon Cave</h1>
+  <h4 id="threat"> PREPARE FOR DOOM! </h4>
+  <input id="playButton" type="submit" value="PLAY">
+  <h3 id="pressPlayMessage"> Press play!
+  </h3>
+
+  <!-- after they press play: -->
+  <!-- question and option 1 and option 2: -->
+
+  <h3 id="intro"><span>You are in a land full of dragons. <br> There are two caves.<br> In one cave, the dragon is friendly <br> and will share his treasure with you. The other dragon is greedy and hungry <br> and will eat you on sight. Which cave will you go into? </span></h3>
+  <div class="choiceButtons">
+
+    <input id="oneButton" type="submit" value="1">
+    <input id="twoButton" type="submit" value="2">
+    <!-- if they lost: -->
+  </div>
+  <h3 id="outcome1">
+    A large dragon jumps out in front of you! <br>
+    He opens his jaws and...<br>
+    Gobbles you down in one bite! <br><br>
+  </h3>
+  <h4 id="uLose">
+    YOU LOSE 👎🏿
+  </h4>
+  <!-- if they won: -->
+  <h3 id="outcome2">
+    You approach the cave...<br>
+    It is dark and spooky...<br>
+    The large dragon stays asleep <br>
+  </h3>
+  <h3 id="uWon">
+    YOU WON!👍🏾 <br>
+  </h3>
+</div>
+<button id="restartButton">
+  RESTART</button>
+<!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/processing.js/1.6.6/processing.min.js'></script><script  src="./script.js"></script>
+
+</body>
+</html>

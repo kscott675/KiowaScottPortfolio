@@ -1,0 +1,101 @@
+@import url(@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+body, #restartButton {
+  
+  margin: 0 auto;
+  text-align: center;
+  font-family: 'Press Start 2P';
+  background-color: #000000;
+  /*background-image: url("https://img1.picmix.com/output/stamp/normal/8/7/1/2/1852178_583ce.gif"), url("https://img1.picmix.com/output/stamp/normal/8/7/1/2/1852178_583ce.gif");
+  background-position: 50px 87px, 1100px 87px;
+  background-repeat: no-repeat;
+  overflow: hidden; */
+  color: white;
+  }
+#name, #threat, #playButton, #pressPlayMessage {
+  padding:10px;
+  top: 20px;
+}
+
+#intro{
+  font-size: 90%;
+}
+#outcome1 {
+  font-size: 90%;
+}
+  
+#intro, #outcome1, #outcome2{
+  color: white;
+  margin: 0 auto;
+  letter-spacing: 1px;
+  line-height: 50px;
+}
+
+#name {
+  text-align: center;
+  animation: blink 1s;
+  animation-iteration-count: 6;
+  font-size: 55px;
+  background: -webkit-linear-gradient(#ffd042, #e33509, #e33509);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: 'Press Start 2P';
+  }
+    
+ @keyframes blink {
+   50% {
+     opacity: 0;
+   }
+ }
+#playButton, #oneButton, #twoButton, #restartButton {
+  animation: 1s shake;
+  border-radius: 12px;
+  background-color: orangered;
+  font-size: 15px;
+  padding: 0px;
+  text-align: center;
+  font-family: 'Press Start 2P';
+  height: 40px;
+  width: 75px;
+  margin: 0 auto;
+  cursor: pointer;
+}
+#restartButton {
+  background-color: black;
+  border-radius: 0px;
+  width: 10%;
+  text-align: center;
+}
+#pressPlayMessage {
+  animation: 1.5s blink;
+  animation-iteration-count: infinite;
+}
+#uLose{
+  font-size: 100%
+  margin: 30px 50px 60px 70px;
+  animation: 1.5s blink infinite;
+   } 
+#uWon {
+  font-size: 100%
+  margin: 30px 50px 60px 70px;
+  animation:.5s blink infinite;
+}
+#threat {
+  animation: 1s shake infinite;
+  font-size: 25px;
+  font-family: 'Press Start 2P';
+}
+@for $i from 1 through 4 {
+         @media screen and (max-width:798px - $i*80) {
+            min-width:600px - $i*80;
+            .wholeThing:nth-child(#{6-$i}) {
+               display:none;
+           }
+@keyframes shake {
+  0% { transform: skewX(-15deg); }
+  5% { transform: skewX(15deg); }
+  10% { transform: skewX(-15deg); }
+  15% { transform: skewX(15deg); }
+  20% { transform: skewX(0deg); }
+  100% { transform: skewX(0deg); } 
+};;;;;;;;;;;;;;;;;;
