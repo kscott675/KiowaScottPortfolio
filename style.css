@@ -63,7 +63,7 @@ body, #restartButton {
 #restartButton {
   background-color: black;
   border-radius: 0px;
-  width: 10%;
+  width: 30%;
   text-align: center;
 }
 #pressPlayMessage {
