@@ -64,6 +64,7 @@ body, #restartButton {
   background-color: black;
   border-radius: 0px;
   min-width: 30%;
+  max-width: 30%;
   text-align: center;
 }
 #pressPlayMessage {
