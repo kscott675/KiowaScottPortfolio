@@ -1,5 +1,5 @@
-# Kiowa Scott's Portfolio
+#                      Kiowa Scott's Portfolio
 
 Hello! Welcome to my portfolio!
 
- https://kscott675.github.io/KiowaScottPortfolio/
+https://kscott675.github.io/KiowaScottPortfolio/
