@@ -2,27 +2,53 @@
 <html lang="en" >
 <head>
   <meta charset="UTF-8">
-  <title>CodePen - Menta: The Thought Trash</title>
-  <link rel="stylesheet" href="./style.css">
+  <title>CodePen - Dragon Cave</title>
+  <link rel='stylesheet' href='https://fonts.googleapis.com/css2?family=Press+Start+2P&amp;display=swap'><link rel="stylesheet" href="./style.css">
 
 </head>
 <body>
 <!-- partial:index.partial.html -->
-<h1 id ="menta">Menta.</h1>
+<title> Dragon Cave </title>
+<div class="wholeThing">
+  <h1 id="name">Dragon Cave</h1>
+  <h4 id="threat"> PREPARE FOR DOOM! </h4>
+  <input id="playButton" type="submit" value="PLAY">
+  <h3 id="pressPlayMessage"> Press play!
+  </h3>
 
-<h3 id="intro"> The place intrusive thoughts go to die.</h3>
+  <!-- after they press play: -->
+  <!-- question and option 1 and option 2: -->
 
-<h4 id = "instructions"> Type your thoughts in the box below. Click the "make it go bye-bye" button to see them disappear. </h4>
+  <h3 id="intro"><span>You are in a land full of dragons. <br> There are two caves.<br> In one cave, the dragon is friendly <br> and will share his treasure with you. The other dragon is greedy and hungry <br> and will eat you on sight. Which cave will you go into? </span></h3>
+  <div class="choiceButtons">
 
-<h5 id="dontWorry"> (Don't worry, no one will ever see this) (Not even me) </h5>
-<textarea id="whatsWrong" rows="5" cols="33" placeholder = "start typing here. dont worry about spelling, grammar, or punctuation">
-</textarea>
-
-<input id="byeButton" type="submit" value="Make it go bye-bye">
-
-<h3 id="footy"> No matter what your thoughts tell you,<br><span id = "notAlone"> you are not alone.</span> </h3>
+    <input id="oneButton" type="submit" value="1">
+    <input id="twoButton" type="submit" value="2">
+    <!-- if they lost: -->
+  </div>
+  <h3 id="outcome1">
+    A large dragon jumps out in front of you! <br>
+    He opens his jaws and...<br>
+    Gobbles you down in one bite! <br><br>
+  </h3>
+  <h4 id="uLose">
+    YOU LOSE 👎🏿
+  </h4>
+  <!-- if they won: -->
+  <h3 id="outcome2">
+    You approach the cave...<br>
+    It is dark and spooky...<br>
+    The large dragon stays asleep <br>
+  </h3>
+  <h3 id="uWon">
+    YOU WON!👍🏾 <br>
+  </h3>
+</div>
+<button id="restartButton">
+  RESTART</button>
 <!-- partial -->
-  <script  src="./script.js"></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/processing.js/1.6.6/processing.min.js'></script><script  src="./script.js"></script>
 
 </body>
 </html>
